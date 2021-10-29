@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 
 # Specify the URL to your package here.
 # This URL must be accessible via pip install
-PACKAGE_URL = 'git+https://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@github.com/a826190/maximo_autoai_agupta.git@mas851'
+PACKAGE_URL = 'git+https://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@github.com/a826190/pump_agupta.git@mas851'
 
 from iotfunctions.dbtables import DBModelStore
 from iotfunctions.db import Database
