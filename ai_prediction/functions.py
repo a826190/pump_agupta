@@ -17,7 +17,7 @@ from iotfunctions.db import Database
 #'''
 class DatabaseDummy:
     tenant_id = 'demo'
-    entity_type_id = '1'
+    entity_type_id = '46'
     db_type = 'db2'
     #db_type = 'ibm'
     #db_schema = "public"
