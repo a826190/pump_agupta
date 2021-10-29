@@ -1,0 +1,9 @@
+identity:
+    orgId: vrvzh6
+    typeId: pump_co
+    deviceId: 11111096
+auth:
+    token: (4!Y28TX_)qUTEix?V
+options:
+    domain: internetofthings.ibmcloud.com
+    logLevel: debug

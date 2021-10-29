@@ -1,0 +1,15 @@
+{
+  "EventName": "event",
+  "EventDescription": "Device event",
+  "EventID": "pump_co_11111096",
+  "Payload": {
+  	  "evt_timestamp": "2020-01-19T03:59:53.03Z",
+	  "speed": 1124,
+	  "head": 54.424,
+	  "pump_mode": "a",
+	  "flow": 115.934,
+	  "voltage": 274,
+	  "POWER": 2.664,
+	  "CURRENT": 8.69
+  }
+}

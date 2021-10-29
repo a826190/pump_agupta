@@ -1,0 +1,464 @@
+{
+    "title": "pump_cp",
+    "timeGrain": "hour",
+    "cards": [
+        {
+            "id": "card-CURRENT-timeseries",
+            "dataSource": {
+                "attributes": [
+                    {
+                        "aggregator": "mean",
+                        "attribute": "CURRENT_pump_cp_mean",
+                        "id": "CURRENT_pump_cp_mean"
+                    }
+                ],
+                "range": {
+                    "count": -24,
+                    "interval": "hour"
+                },
+                "timeGrain": "hour"
+            },
+            "content": {
+                "series": [
+                    {
+                        "dataSourceId": "CURRENT_pump_cp_mean",
+                        "label": "Mean"
+                    }
+                ],
+                "xLabel": "Time",
+                "yLabel": "Current"
+            },
+            "size": "MEDIUM",
+            "title": "CURRENT",
+            "type": "TIMESERIES"
+        },
+        {
+            "id": "card-entity_id-value",
+            "dataSource": {
+                "attributes": [
+                    {
+                        "aggregator": "last",
+                        "attribute": "entity_id_pump_cp_last",
+                        "id": "entity_id_pump_cp_last"
+                    }
+                ]
+            },
+            "content": {
+                "attributes": [
+                    {
+                        "dataSourceId": "entity_id_pump_cp_last",
+                        "label": "Last entity_id"
+                    }
+                ]
+            },
+            "size": "SMALL",
+            "title": "entity_id",
+            "type": "VALUE"
+        },
+        {
+            "id": "card-flow-timeseries",
+            "dataSource": {
+                "attributes": [
+                    {
+                        "aggregator": "mean",
+                        "attribute": "flow_pump_cp_mean",
+                        "id": "flow_pump_cp_mean"
+                    }
+                ],
+                "range": {
+                    "count": -24,
+                    "interval": "hour"
+                },
+                "timeGrain": "hour"
+            },
+            "content": {
+                "series": [
+                    {
+                        "dataSourceId": "flow_pump_cp_mean",
+                        "label": "Mean"
+                    }
+                ],
+                "xLabel": "Time",
+                "yLabel": "Flow"
+            },
+            "size": "MEDIUM",
+            "title": "flow",
+            "type": "TIMESERIES"
+        },
+        {
+            "id": "card-head-timeseries",
+            "dataSource": {
+                "attributes": [
+                    {
+                        "aggregator": "mean",
+                        "attribute": "head_pump_cp_mean",
+                        "id": "head_pump_cp_mean"
+                    }
+                ],
+                "range": {
+                    "count": -24,
+                    "interval": "hour"
+                },
+                "timeGrain": "hour"
+            },
+            "content": {
+                "series": [
+                    {
+                        "dataSourceId": "head_pump_cp_mean",
+                        "label": "Mean"
+                    }
+                ],
+                "xLabel": "Time",
+                "yLabel": "Head"
+            },
+            "size": "MEDIUM",
+            "title": "head",
+            "type": "TIMESERIES"
+        },
+        {
+            "id": "card-POWER-timeseries",
+            "dataSource": {
+                "attributes": [
+                    {
+                        "aggregator": "mean",
+                        "attribute": "POWER_pump_cp_mean",
+                        "id": "POWER_pump_cp_mean"
+                    }
+                ],
+                "range": {
+                    "count": -24,
+                    "interval": "hour"
+                },
+                "timeGrain": "hour"
+            },
+            "content": {
+                "series": [
+                    {
+                        "dataSourceId": "POWER_pump_cp_mean",
+                        "label": "Mean"
+                    }
+                ],
+                "xLabel": "Time",
+                "yLabel": "Power"
+            },
+            "size": "MEDIUM",
+            "title": "POWER",
+            "type": "TIMESERIES"
+        },
+        {
+            "id": "card-speed-timeseries",
+            "dataSource": {
+                "attributes": [
+                    {
+                        "aggregator": "mean",
+                        "attribute": "speed_pump_cp_mean",
+                        "id": "speed_pump_cp_mean"
+                    }
+                ],
+                "range": {
+                    "count": -24,
+                    "interval": "hour"
+                },
+                "timeGrain": "hour"
+            },
+            "content": {
+                "series": [
+                    {
+                        "dataSourceId": "speed_pump_cp_mean",
+                        "label": "Mean"
+                    }
+                ],
+                "xLabel": "Time",
+                "yLabel": "Speed"
+            },
+            "size": "MEDIUM",
+            "title": "speed",
+            "type": "TIMESERIES"
+        },
+        {
+            "id": "card-pump_mode-value",
+            "dataSource": {
+                "attributes": [
+                    {
+                        "aggregator": "last",
+                        "attribute": "pump_mode_pump_cp_last",
+                        "id": "pump_mode_pump_cp_last"
+                    }
+                ]
+            },
+            "content": {
+                "attributes": [
+                    {
+                        "dataSourceId": "pump_mode_pump_cp_last",
+                        "label": "Last pump_mode"
+                    }
+                ]
+            },
+            "size": "SMALL",
+            "title": "pump_mode",
+            "type": "VALUE"
+        },
+        {
+            "id": "card-voltage-timeseries",
+            "dataSource": {
+                "attributes": [
+                    {
+                        "aggregator": "mean",
+                        "attribute": "voltage_pump_cp_mean",
+                        "id": "voltage_pump_cp_mean"
+                    }
+                ],
+                "range": {
+                    "count": -24,
+                    "interval": "hour"
+                },
+                "timeGrain": "hour"
+            },
+            "content": {
+                "series": [
+                    {
+                        "dataSourceId": "voltage_pump_cp_mean",
+                        "label": "Mean"
+                    }
+                ],
+                "xLabel": "Time",
+                "yLabel": "Voltage"
+            },
+            "size": "MEDIUM",
+            "title": "voltage",
+            "type": "TIMESERIES"
+        }
+    ],
+    "layouts": {
+        "lg": [
+            {
+                "w": 8,
+                "h": 2,
+                "x": 0,
+                "y": 0,
+                "i": "card-CURRENT-timeseries",
+                "moved": false,
+                "static": false,
+                "isResizable": true
+            },
+            {
+                "w": 4,
+                "h": 1,
+                "x": 8,
+                "y": 0,
+                "i": "card-entity_id-value",
+                "moved": false,
+                "static": false,
+                "isResizable": true
+            },
+            {
+                "w": 8,
+                "h": 2,
+                "x": 8,
+                "y": 1,
+                "i": "card-flow-timeseries",
+                "moved": false,
+                "static": false,
+                "isResizable": true
+            },
+            {
+                "w": 8,
+                "h": 2,
+                "x": 0,
+                "y": 2,
+                "i": "card-head-timeseries",
+                "moved": false,
+                "static": false,
+                "isResizable": true
+            },
+            {
+                "w": 8,
+                "h": 2,
+                "x": 8,
+                "y": 3,
+                "i": "card-POWER-timeseries",
+                "moved": false,
+                "static": false,
+                "isResizable": true
+            },
+            {
+                "w": 8,
+                "h": 2,
+                "x": 0,
+                "y": 4,
+                "i": "card-speed-timeseries",
+                "moved": false,
+                "static": false,
+                "isResizable": true
+            },
+            {
+                "w": 4,
+                "h": 1,
+                "x": 8,
+                "y": 5,
+                "i": "card-pump_mode-value",
+                "moved": false,
+                "static": false,
+                "isResizable": true
+            },
+            {
+                "w": 8,
+                "h": 2,
+                "x": 0,
+                "y": 6,
+                "i": "card-voltage-timeseries",
+                "moved": false,
+                "static": false,
+                "isResizable": true
+            }
+        ],
+        "md": [
+            {
+                "w": 8,
+                "h": 2,
+                "x": 0,
+                "y": 0,
+                "i": "card-CURRENT-timeseries",
+                "moved": false,
+                "static": false,
+                "isResizable": true
+            },
+            {
+                "w": 4,
+                "h": 1,
+                "x": 0,
+                "y": 2,
+                "i": "card-entity_id-value",
+                "moved": false,
+                "static": false,
+                "isResizable": true
+            },
+            {
+                "w": 8,
+                "h": 2,
+                "x": 0,
+                "y": 3,
+                "i": "card-flow-timeseries",
+                "moved": false,
+                "static": false,
+                "isResizable": true
+            },
+            {
+                "w": 8,
+                "h": 2,
+                "x": 0,
+                "y": 5,
+                "i": "card-head-timeseries",
+                "moved": false,
+                "static": false,
+                "isResizable": true
+            },
+            {
+                "w": 8,
+                "h": 2,
+                "x": 0,
+                "y": 7,
+                "i": "card-POWER-timeseries",
+                "moved": false,
+                "static": false,
+                "isResizable": true
+            },
+            {
+                "w": 8,
+                "h": 2,
+                "x": 0,
+                "y": 9,
+                "i": "card-speed-timeseries",
+                "moved": false,
+                "static": false,
+                "isResizable": true
+            },
+            {
+                "w": 4,
+                "h": 1,
+                "x": 0,
+                "y": 11,
+                "i": "card-pump_mode-value",
+                "moved": false,
+                "static": false,
+                "isResizable": true
+            },
+            {
+                "w": 8,
+                "h": 2,
+                "x": 0,
+                "y": 12,
+                "i": "card-voltage-timeseries",
+                "moved": false,
+                "static": false,
+                "isResizable": true
+            }
+        ],
+        "sm": [
+            {
+                "i": "card-CURRENT-timeseries",
+                "x": 0,
+                "y": 0,
+                "w": 4,
+                "h": 2,
+                "isResizable": true
+            },
+            {
+                "i": "card-entity_id-value",
+                "x": 4,
+                "y": 0,
+                "w": 2,
+                "h": 1,
+                "isResizable": true
+            },
+            {
+                "i": "card-flow-timeseries",
+                "x": 4,
+                "y": 1,
+                "w": 4,
+                "h": 2,
+                "isResizable": true
+            },
+            {
+                "i": "card-head-timeseries",
+                "x": 0,
+                "y": 2,
+                "w": 4,
+                "h": 2,
+                "isResizable": true
+            },
+            {
+                "i": "card-POWER-timeseries",
+                "x": 4,
+                "y": 3,
+                "w": 4,
+                "h": 2,
+                "isResizable": true
+            },
+            {
+                "i": "card-speed-timeseries",
+                "x": 0,
+                "y": 4,
+                "w": 4,
+                "h": 2,
+                "isResizable": true
+            },
+            {
+                "i": "card-pump_mode-value",
+                "x": 4,
+                "y": 5,
+                "w": 2,
+                "h": 1,
+                "isResizable": true
+            },
+            {
+                "i": "card-voltage-timeseries",
+                "x": 0,
+                "y": 6,
+                "w": 4,
+                "h": 2,
+                "isResizable": true
+            }
+        ]
+    }
+}

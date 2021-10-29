@@ -1,0 +1,8 @@
+{
+	"input_data": [{
+		"fields": ["INV1A - Module 2 AC Power Smoothed"],
+		"values": [
+			[0.0]
+		]
+	}]
+}

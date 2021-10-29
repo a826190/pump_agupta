@@ -1,0 +1,324 @@
+{
+    "title": "Asset Metrics Dashboard",
+    "cards": [
+        {
+            "size": "SMALLWIDE",
+            "id": "serialNumber",
+            "title": "Serial Number",
+            "type": "VALUE",
+            "dataSource": {
+                "range": {
+                    "count": -1,
+                    "interval": "day",
+                    "type": "rolling"
+                },
+                "attributes": [
+                    {
+                        "id": "e6430e75-d845-4ec2-a3e8-2596c536a59d",
+                        "attribute": "serialNumber"
+                    }
+                ]
+            },
+            "content": {
+                "attributes": [
+                    {
+                        "dataSourceId": "e6430e75-d845-4ec2-a3e8-2596c536a59d",
+                        "label": "serialNumber"
+                    }
+                ]
+            },
+            "timeRange": "last24Hours"
+        },
+        {
+            "size": "SMALLWIDE",
+            "id": "manufacturer",
+            "title": "Manufacturer",
+            "type": "VALUE",
+            "dataSource": {
+                "range": {
+                    "count": -1,
+                    "interval": "day",
+                    "type": "rolling"
+                },
+                "attributes": [
+                    {
+                        "id": "3e21d648-4fca-4fed-8139-bc4659e4f36b",
+                        "attribute": "manufacturer"
+                    }
+                ]
+            },
+            "content": {
+                "attributes": [
+                    {
+                        "dataSourceId": "3e21d648-4fca-4fed-8139-bc4659e4f36b",
+                        "label": "manufacturer"
+                    }
+                ]
+            },
+            "timeRange": "last24Hours"
+        },
+        {
+            "size": "MEDIUM",
+            "id": "head",
+            "title": "Head",
+            "type": "TIMESERIES",
+            "dataSource": {
+                "range": {
+                    "interval": "hour",
+                    "count": -24,
+                    "type": "rolling"
+                },
+                "attributes": [
+                    {
+                        "id": "11f0f1cb-7730-483f-bc0d-e511c1cce644",
+                        "attribute": "head"
+                    }
+                ]
+            },
+            "content": {
+                "series": [
+                    {
+                        "dataSourceId": "11f0f1cb-7730-483f-bc0d-e511c1cce644",
+                        "color": "#6929c4",
+                        "label": "head"
+                    }
+                ],
+                "includeZeroOnXaxis": false,
+                "timeDataSourceId": "timestamp",
+                "showLegend": true,
+                "includeZeroOnYaxis": false,
+                "xLabel": "Time"
+            },
+            "timeRange": "last24Hours"
+        },
+        {
+            "size": "MEDIUM",
+            "id": "speed",
+            "title": "Speed",
+            "type": "TIMESERIES",
+            "dataSource": {
+                "range": {
+                    "interval": "hour",
+                    "count": -24,
+                    "type": "rolling"
+                },
+                "attributes": [
+                    {
+                        "id": "b0ed7fd7-fe85-440a-9b89-fa32f7bfa3b1",
+                        "attribute": "speed"
+                    }
+                ]
+            },
+            "content": {
+                "series": [
+                    {
+                        "dataSourceId": "b0ed7fd7-fe85-440a-9b89-fa32f7bfa3b1",
+                        "color": "#6929c4",
+                        "label": "speed"
+                    }
+                ],
+                "includeZeroOnXaxis": false,
+                "timeDataSourceId": "timestamp",
+                "showLegend": true,
+                "includeZeroOnYaxis": false,
+                "xLabel": "Time"
+            },
+            "timeRange": "last24Hours"
+        },
+        {
+            "size": "MEDIUM",
+            "id": "CURRENT",
+            "title": "Current",
+            "type": "TIMESERIES",
+            "dataSource": {
+                "range": {
+                    "interval": "hour",
+                    "count": -24,
+                    "type": "rolling"
+                },
+                "attributes": [
+                    {
+                        "id": "b8c02c29-afee-44f8-be74-a64e91fbf99e",
+                        "attribute": "CURRENT"
+                    }
+                ]
+            },
+            "content": {
+                "series": [
+                    {
+                        "dataSourceId": "b8c02c29-afee-44f8-be74-a64e91fbf99e",
+                        "color": "#6929c4",
+                        "label": "CURRENT"
+                    }
+                ],
+                "includeZeroOnXaxis": false,
+                "timeDataSourceId": "timestamp",
+                "showLegend": true,
+                "includeZeroOnYaxis": false,
+                "xLabel": "Time"
+            },
+            "timeRange": "last24Hours"
+        },
+        {
+            "size": "MEDIUM",
+            "id": "voltage",
+            "title": "Voltage",
+            "type": "TIMESERIES",
+            "dataSource": {
+                "range": {
+                    "interval": "hour",
+                    "count": -24,
+                    "type": "rolling"
+                },
+                "attributes": [
+                    {
+                        "id": "d4c968d9-4a86-481a-8645-115b092386fa",
+                        "attribute": "voltage"
+                    }
+                ]
+            },
+            "content": {
+                "series": [
+                    {
+                        "dataSourceId": "d4c968d9-4a86-481a-8645-115b092386fa",
+                        "color": "#6929c4",
+                        "label": "voltage"
+                    }
+                ],
+                "includeZeroOnXaxis": false,
+                "timeDataSourceId": "timestamp",
+                "showLegend": true,
+                "includeZeroOnYaxis": false,
+                "xLabel": "Time"
+            },
+            "timeRange": "last24Hours"
+        },
+        {
+            "size": "MEDIUM",
+            "id": "POWER",
+            "title": "Power vs Predicted Power",
+            "type": "TIMESERIES",
+            "dataSource": {
+                "range": {
+                    "interval": "hour",
+                    "count": -24,
+                    "type": "rolling"
+                },
+                "attributes": [
+                    {
+                        "id": "d66b7958-6c68-4465-a811-2c465dea2498",
+                        "attribute": "POWER"
+                    }
+                ]
+            },
+            "content": {
+                "series": [
+                    {
+                        "dataSourceId": "d66b7958-6c68-4465-a811-2c465dea2498",
+                        "color": "#6929c4",
+                        "label": "POWER"
+                    }
+                ],
+                "includeZeroOnXaxis": false,
+                "timeDataSourceId": "timestamp",
+                "showLegend": true,
+                "includeZeroOnYaxis": false,
+                "xLabel": "Time"
+            },
+            "timeRange": "last24Hours"
+        },
+        {
+            "size": "MEDIUM",
+            "id": "flow",
+            "title": "Flow",
+            "type": "TIMESERIES",
+            "dataSource": {
+                "range": {
+                    "interval": "hour",
+                    "count": -24,
+                    "type": "rolling"
+                },
+                "attributes": [
+                    {
+                        "id": "cd8e28b5-f2c3-47bf-a80b-c64d56d42cc9",
+                        "attribute": "flow"
+                    }
+                ]
+            },
+            "content": {
+                "series": [
+                    {
+                        "dataSourceId": "cd8e28b5-f2c3-47bf-a80b-c64d56d42cc9",
+                        "color": "#6929c4",
+                        "label": "flow"
+                    }
+                ],
+                "includeZeroOnXaxis": false,
+                "timeDataSourceId": "timestamp",
+                "showLegend": true,
+                "includeZeroOnYaxis": false,
+                "xLabel": "Time"
+            },
+            "timeRange": "last24Hours"
+        },
+        {
+            "size": "SMALLWIDE",
+            "id": "evt_timestamp",
+            "title": "evt_timestamp",
+            "type": "VALUE",
+            "dataSource": {
+                "range": {
+                    "count": -1,
+                    "interval": "day",
+                    "type": "rolling"
+                },
+                "attributes": [
+                    {
+                        "aggregator": "last",
+                        "id": "f16b14d4-c473-4e78-b854-d6e0a555ce43",
+                        "attribute": "evt_timestamp"
+                    }
+                ]
+            },
+            "content": {
+                "attributes": [
+                    {
+                        "dataSourceId": "f16b14d4-c473-4e78-b854-d6e0a555ce43",
+                        "label": "evt_timestamp"
+                    }
+                ]
+            },
+            "timeRange": "last24Hours"
+        },
+        {
+            "size": "SMALLWIDE",
+            "id": "pump_mode",
+            "title": "Pump Mode",
+            "type": "VALUE",
+            "dataSource": {
+                "range": {
+                    "count": -1,
+                    "interval": "day",
+                    "type": "rolling"
+                },
+                "attributes": [
+                    {
+                        "aggregator": "last",
+                        "id": "9129ac99-1737-4797-af6a-7bfb52e4af90",
+                        "attribute": "pump_mode"
+                    }
+                ]
+            },
+            "content": {
+                "attributes": [
+                    {
+                        "dataSourceId": "9129ac99-1737-4797-af6a-7bfb52e4af90",
+                        "label": "pump_mode"
+                    }
+                ]
+            },
+            "timeRange": "last24Hours",
+            "description": "A = Automatic\nH = Handheld"
+        }
+    ]
+}

@@ -1,0 +1,238 @@
+{
+    "title": "pump_cp",
+    "timeGrain": "hour",
+    "cards": [
+        {
+            "id": "card-CURRENT-timeseries",
+            "dataSource": {
+                "attributes": [
+                    {
+                        "id": "CURRENT_8d1d5e99-3749-470d-a663-c4c782c84ec9",
+                        "attribute": "CURRENT"
+                    }
+                ],
+                "range": {
+                    "interval": "day",
+                    "count": -7,
+                    "type": "rolling"
+                }
+            },
+            "content": {
+                "series": [
+                    {
+                        "dataSourceId": "CURRENT_8d1d5e99-3749-470d-a663-c4c782c84ec9",
+                        "label": "CURRENT",
+                        "color": "#1192e8"
+                    }
+                ],
+                "xLabel": "Time",
+                "yLabel": "Current"
+            },
+            "size": "MEDIUM",
+            "title": "CURRENT",
+            "type": "TIMESERIES",
+            "timeRange": "last7Days"
+        },
+        {
+            "id": "card-entity_id-value",
+            "dataSource": {
+                "attributes": [
+                    {
+                        "aggregator": "last",
+                        "attribute": "entity_id_pump_cp_last",
+                        "id": "entity_id_pump_cp_last"
+                    }
+                ]
+            },
+            "content": {
+                "attributes": [
+                    {
+                        "dataSourceId": "entity_id_pump_cp_last",
+                        "label": "Last entity_id"
+                    }
+                ]
+            },
+            "size": "SMALL",
+            "title": "entity_id",
+            "type": "VALUE"
+        },
+        {
+            "id": "card-flow-timeseries",
+            "dataSource": {
+                "attributes": [
+                    {
+                        "id": "flow_8a554601-320e-4bce-94e7-8f7f63f6490b",
+                        "attribute": "flow"
+                    }
+                ],
+                "range": {
+                    "interval": "day",
+                    "count": -7,
+                    "type": "rolling"
+                }
+            },
+            "content": {
+                "series": [
+                    {
+                        "dataSourceId": "flow_8a554601-320e-4bce-94e7-8f7f63f6490b",
+                        "label": "flow",
+                        "color": "#1192e8"
+                    }
+                ],
+                "xLabel": "Time",
+                "yLabel": "Flow"
+            },
+            "size": "MEDIUM",
+            "title": "flow",
+            "type": "TIMESERIES",
+            "timeRange": "last7Days"
+        },
+        {
+            "id": "card-head-timeseries",
+            "dataSource": {
+                "attributes": [
+                    {
+                        "id": "head_c0880cec-9ad8-4b63-93f9-9f90112ec376",
+                        "attribute": "head"
+                    }
+                ],
+                "range": {
+                    "interval": "day",
+                    "count": -7,
+                    "type": "rolling"
+                }
+            },
+            "content": {
+                "series": [
+                    {
+                        "dataSourceId": "head_c0880cec-9ad8-4b63-93f9-9f90112ec376",
+                        "label": "head",
+                        "color": "#1192e8"
+                    }
+                ],
+                "xLabel": "Time",
+                "yLabel": "Head"
+            },
+            "size": "MEDIUM",
+            "title": "head",
+            "type": "TIMESERIES",
+            "timeRange": "last7Days"
+        },
+        {
+            "id": "card-POWER-timeseries",
+            "dataSource": {
+                "attributes": [
+                    {
+                        "id": "POWER_82d5ce07-07a8-4142-9ad6-c5a9ccf9e910",
+                        "attribute": "POWER"
+                    }
+                ],
+                "range": {
+                    "interval": "day",
+                    "count": -7,
+                    "type": "rolling"
+                }
+            },
+            "content": {
+                "series": [
+                    {
+                        "dataSourceId": "POWER_82d5ce07-07a8-4142-9ad6-c5a9ccf9e910",
+                        "label": "POWER",
+                        "color": "#1192e8"
+                    }
+                ],
+                "xLabel": "Time",
+                "yLabel": "Power"
+            },
+            "size": "MEDIUM",
+            "title": "POWER",
+            "type": "TIMESERIES",
+            "timeRange": "last7Days"
+        },
+        {
+            "id": "card-speed-timeseries",
+            "dataSource": {
+                "attributes": [
+                    {
+                        "id": "speed_9c54a201-00dd-47d1-8998-77a9f5528ce3",
+                        "attribute": "speed"
+                    }
+                ],
+                "range": {
+                    "interval": "day",
+                    "count": -7,
+                    "type": "rolling"
+                }
+            },
+            "content": {
+                "series": [
+                    {
+                        "dataSourceId": "speed_9c54a201-00dd-47d1-8998-77a9f5528ce3",
+                        "label": "speed",
+                        "color": "#1192e8"
+                    }
+                ],
+                "xLabel": "Time",
+                "yLabel": "Speed"
+            },
+            "size": "MEDIUM",
+            "title": "speed",
+            "type": "TIMESERIES",
+            "timeRange": "last7Days"
+        },
+        {
+            "id": "card-pump_mode-value",
+            "dataSource": {
+                "attributes": [
+                    {
+                        "id": "pump_mode_6f2edb2d-2576-4dcd-9d11-fdb92c6fb925",
+                        "attribute": "pump_mode",
+                        "aggregator": "last"
+                    }
+                ]
+            },
+            "content": {
+                "attributes": [
+                    {
+                        "dataSourceId": "pump_mode_6f2edb2d-2576-4dcd-9d11-fdb92c6fb925",
+                        "label": "pump_mode"
+                    }
+                ]
+            },
+            "size": "SMALL",
+            "title": "pump_mode",
+            "type": "VALUE"
+        },
+        {
+            "id": "card-voltage-timeseries",
+            "dataSource": {
+                "attributes": [
+                    {
+                        "id": "voltage_25f78697-262c-4ab1-8e71-c4539767ffe7",
+                        "attribute": "voltage"
+                    }
+                ],
+                "range": {
+                    "interval": "day",
+                    "count": -7,
+                    "type": "rolling"
+                }
+            },
+            "content": {
+                "series": [
+                    {
+                        "dataSourceId": "voltage_25f78697-262c-4ab1-8e71-c4539767ffe7",
+                        "label": "voltage",
+                        "color": "#1192e8"
+                    }
+                ],
+                "xLabel": "Time",
+                "yLabel": "Voltage"
+            },
+            "size": "MEDIUM",
+            "title": "voltage",
+            "type": "TIMESERIES",
+            "timeRange": "last7Days"
+        }
+    ]
+}
